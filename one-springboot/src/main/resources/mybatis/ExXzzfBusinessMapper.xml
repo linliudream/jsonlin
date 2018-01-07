@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lm.dao.ExXzzfBusinessMapper" >
+  <resultMap id="BaseResultMap" type="com.lm.model.ExXzzfBusiness" >
+    <id column="ID" property="id" jdbcType="VARCHAR" />
+    <result column="BSNUM" property="bsnum" jdbcType="VARCHAR" />
+    <result column="SXBH" property="sxbh" jdbcType="VARCHAR" />
+    <result column="SXZXBH" property="sxzxbh" jdbcType="VARCHAR" />
+    <result column="SXNAME" property="sxname" jdbcType="VARCHAR" />
+    <result column="SXZXNAME" property="sxzxname" jdbcType="VARCHAR" />
+    <result column="SXID" property="sxid" jdbcType="VARCHAR" />
+    <result column="DEPTID" property="deptid" jdbcType="VARCHAR" />
+    <result column="DEPTNAME" property="deptname" jdbcType="VARCHAR" />
+    <result column="ZFRWMC" property="zfrwmc" jdbcType="VARCHAR" />
+    <result column="TASKID" property="taskid" jdbcType="VARCHAR" />
+    <result column="yqmc" property="yqmc" jdbcType="VARCHAR" />
+    <result column="qylx" property="qylx" jdbcType="VARCHAR" />
+    <result column="qyshxydm" property="qyshxydm" jdbcType="VARCHAR" />
+    <result column="rwxdsj" property="rwxdsj" jdbcType="TIMESTAMP" />
+    <result column="rwswcsj" property="rwswcsj" jdbcType="TIMESTAMP" />
+    <result column="status" property="status" jdbcType="VARCHAR" />
+    <result column="FZRID" property="fzrid" jdbcType="VARCHAR" />
+    <result column="FZRNAME" property="fzrname" jdbcType="VARCHAR" />
+    <result column="CREATE_DATE" property="createDate" jdbcType="DATE" />
+    <result column="latitude" property="latitude" jdbcType="VARCHAR" />
+    <result column="longitude" property="longitude" jdbcType="VARCHAR" />
+    <result column="type" property="type" jdbcType="VARCHAR" />
+    <result column="EXCHANGE" property="exchange" jdbcType="VARCHAR" />
+  </resultMap>
+ 
+  <select id="findAll" resultType="com.lm.model.ExXzzfBusiness"  >
+  select  * from ex_xzzf_business
+  </select>
+  
+  <select id="findByPage" resultMap="BaseResultMap"  >
+  	select  * from ex_xzzf_business
+  </select>
+  
+  
+  <select id="countItem" resultType="int">
+  select  count(*) from ex_xzzf_business
+  </select>
+</mapper>
