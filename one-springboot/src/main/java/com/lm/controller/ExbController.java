@@ -55,15 +55,5 @@ public class ExbController {
 		return  JSON.toJSONString(pageInfo);
 	}	
 	
-	/*@Test
-	public void testFindByPage() {
-		Page<Person> persons = personService.findByPage(1, 2);
-		// 需要把Page包装成PageInfo对象才能序列化。该插件也默认实现了一个PageInfo
-		PageInfo<Person> pageInfo = new PageInfo<>(persons);
-		Assert.assertNotNull(persons);c
-		logger.debug(pageInfo.toString());
-		logger.debug(JSON.toJSONString(pageInfo));
-	}*/
-	
 
 }

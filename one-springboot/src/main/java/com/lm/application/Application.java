@@ -37,7 +37,7 @@ public class Application{
         return new DataSource();
     }
 
-    
+  /*  
     //配置mybatis的分页插件pageHelper
          @Bean
          public PageHelper pageHelper(){
@@ -50,7 +50,7 @@ public class Application{
              pageHelper.setProperties(properties);
              return pageHelper;
          }
-    
+    */
     
     //创建SqlSessionFactory
     @Bean
